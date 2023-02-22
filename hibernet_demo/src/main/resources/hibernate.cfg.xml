@@ -11,14 +11,16 @@
 		<property name="connection.username">root</property>
 		<property name="connection.password">1709</property>
 		<property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
-		<property name="hbm2ddl.auto">create</property>
+		<property name="hbm2ddl.auto">update</property>
 		<property name="show_sql">true</property>
 		<property name="format_sql">true</property>
 		
 
-		<mapping class="com.sessionquery.employee.Employee" />
-		<mapping class="com.sessionquery.employee.Student" />
-		<mapping class="com.sessionquery.employee.Vehicle" />
+	<!--	<mapping class="com.sessionquery.employee.Employee" />
+		<mapping class="com.sessionquery.employee.Student" / >
+		<mapping class="com.sessionquery.employee.Vehicle" /> -->
+		<mapping class="com.hubernate.newdemo.ProWings"/>
+		
 		
 	</session-factory>
 </hibernate-configuration>

@@ -84,17 +84,17 @@ public class CarDBHibernate {
 
 		Session session = factory.openSession();
 
-//		CarDBHibernate ch1=new CarDBHibernate(1111, "Range Rover", 12900.98D);
-//		CarDBHibernate ch2=new CarDBHibernate(1112, "Rolls Royce", 10900.98D);
-//		CarDBHibernate ch3=new CarDBHibernate(1113, "Mercedes", 11900.98D);
-//		CarDBHibernate ch4=new CarDBHibernate(1114, "Audi", 13900.98D);
-//		CarDBHibernate ch5=new CarDBHibernate(1116, "Audi", 13900.98D);
+		CarDBHibernate ch1=new CarDBHibernate(1111, "Range Rover", 12900.98D);
+		CarDBHibernate ch2=new CarDBHibernate(1112, "Rolls Royce", 10900.98D);
+		CarDBHibernate ch3=new CarDBHibernate(1113, "Mercedes", 11900.98D);
+		CarDBHibernate ch4=new CarDBHibernate(1114, "Audi", 13900.98D);
+		CarDBHibernate ch5=new CarDBHibernate(1116, "Audi", 13900.98D);
 
 		Transaction tx = session.beginTransaction();
 
-//		session.save(ch1);
-//		session.save(ch2);
-//		session.save(ch3);
+		session.save(ch1);
+		session.save(ch2);
+		session.save(ch3);
 		tx.commit();
 		
 		Transaction tx2=session.beginTransaction();
