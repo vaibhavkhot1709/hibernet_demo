@@ -52,15 +52,15 @@ public class VehicleApp {
 			System.out.println(veh);
 		}
 
-//		List<Object[]> list = session.createNativeQuery("select from Vehicle").list();
-//
-//		for (Object[] temp : list) {
-//			Vehicle v = new Vehicle();
-//			v.setNm(temp[0].toString());
-//			v.setAvg(Integer.parseInt(temp[1].toString()));
-//
-//			System.out.println(v);
-//		}
+		List<Object[]> list = session.createNativeQuery("select from Vehicle").list();
+
+		for (Object[] temp : list) {
+			Vehicle v = new Vehicle();
+			v.setNm(temp[0].toString());
+			v.setAvg(Integer.parseInt(temp[1].toString()));
+
+			System.out.println(v);
+		}
 
 		System.out.println("**********  Vehicle Test complete **************");
 

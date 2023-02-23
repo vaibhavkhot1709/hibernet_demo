@@ -5,7 +5,7 @@
 
 <hibernate-configuration>
 	<session-factory>
-	
+
 		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
 		<property name="connection.url">jdbc:mysql://localhost:/newdb</property>
 		<property name="connection.username">root</property>
@@ -14,13 +14,13 @@
 		<property name="hbm2ddl.auto">update</property>
 		<property name="show_sql">true</property>
 		<property name="format_sql">true</property>
-		
 
-	<!--	<mapping class="com.sessionquery.employee.Employee" />
-		<mapping class="com.sessionquery.employee.Student" / >
-		<mapping class="com.sessionquery.employee.Vehicle" /> -->
-		<mapping class="com.hubernate.newdemo.ProWings"/>
-		
-		
+
+		<mapping class="com.hibernet_demo.Employee" />
+		<!-- <mapping class="com.sessionquery.employee.Employee" /> <mapping class="com.sessionquery.employee.Person" 
+			<mapping class="com.sessionquery.employee.Vehicle" /> /> <mapping class="com.sessionquery.employee.Student" 
+			/> <mapping class="com.hubernate.newdemo.ProWings" /> -->
+
+
 	</session-factory>
 </hibernate-configuration>
